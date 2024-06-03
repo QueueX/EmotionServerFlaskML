@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  python-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kinok0-flask-app
+    container_name: kinok0-flask-app
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_APP: app.py
+      FLASK_ENV: production
