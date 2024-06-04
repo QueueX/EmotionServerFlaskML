@@ -6,10 +6,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 # Копировать приложение и модели в контейнер
 COPY . .
-# Установить переменные окружения
-ENV FLASK_APP=app.py
-ENV FLASK_ENV=production
 # Выставить порты
 EXPOSE 5000
 # Запустить приложение
-CMD ["flask", "run"]
+CMD ["python3", "app.py"]
