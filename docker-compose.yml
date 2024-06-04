@@ -7,7 +7,7 @@ services:
     image: kinok0-flask-app
     networks:
       - emotion
-    container_name: kinok0-flask-app
+    container_name: python-server
     ports:
       - "5000:5000"
     environment:
