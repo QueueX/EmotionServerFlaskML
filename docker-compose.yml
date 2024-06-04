@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: kinok0-flask-app
+    hostname: 172.20.0.2
     container_name: kinok0-flask-app
     ports:
       - "5000:5000"
